@@ -37,7 +37,7 @@ curl_close($ch);
 $line = "Validacion remota [Message: $to_send, Signature: $notification_signature, Valid: $response]\n";
 
 $myFile = 'demo-khipu-js.log';
-$fh = fopen($myFile, 'w') or die("can't open file");
+$fh = fopen($myFile,'a') or die("can't open file");
 fwrite($fh, print_r($_REQUEST, true));
 fwrite($fh, $line);
 
