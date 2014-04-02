@@ -1,7 +1,8 @@
 <?php
 include('constants.php');
 
-function khipu_do_call($endpoint, $data) {
+function khipu_do_call_json($endpoint, $data)
+{
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, KHIPU_URL . $endpoint );
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -9,7 +10,12 @@ function khipu_do_call($endpoint, $data) {
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	$output = curl_exec($ch);
 	curl_close($ch);
-	return json_decode($output, true);
+	return $output;
+}
+
+function khipu_do_call($endpoint, $data) {
+	$json = khipu_do_call_json($endpoint, $data);
+	return json_decode($json, true);
 }
 
 function khipu_get_banks()
@@ -73,5 +79,5 @@ function khipu_get_new_payment($email, $bankId) {
 		'hash' => $hash
 	);
 
-	return khipu_do_call('createPaymentURL', $data);
+	return khipu_do_call_json('createPaymentURL', $data);
 }
