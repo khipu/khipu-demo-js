@@ -5,5 +5,5 @@ if (!filter_var($_REQUEST['email'], FILTER_VALIDATE_EMAIL)) {
 	return;
 }
 
-$payment = khipu_get_new_payment($_REQUEST['email'], $_REQUEST['bankId']);
-header('Location: process.php?paymentId=' . $payment['id']);
+$json = khipu_get_new_payment($_REQUEST['email'], $_REQUEST['bankId']);
+header('Location: process.php?data=' . urlencode($json));

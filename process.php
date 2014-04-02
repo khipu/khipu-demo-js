@@ -28,8 +28,8 @@
 	<![endif]-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="atmosphere.js"></script>
-	<script src="http://storage.googleapis.com/installer/khipu-0.9.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/atmosphere/2.1.2/atmosphere.min.js"></script> 
+	<script src="http://storage.googleapis.com/installer/khipu-1.1.js"></script>
 
 </head>
 
@@ -77,12 +77,10 @@
 </div>
 <div id="khipu-chrome-extension-div"></div>
 <script>
-	<?php $paymentId = $_REQUEST['paymentId']; ?>
 	window.onload = function () {
 		KhipuLib.onLoad({
 				elementId: 'pay-button',
-				returnUrl: '<?php echo BASE_DIRECTORY . "process.php?paymentId=$paymentId"; ?>',
-				paymentId: '<?php echo $paymentId; ?>'
+				data: <?php echo $_REQUEST['data']; ?>
 			}
 		)
 	}
