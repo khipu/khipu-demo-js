@@ -27,9 +27,9 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="atmosphere.js"></script>
-	<script src="http://storage.googleapis.com/installer/khipu-0.1.js"></script>
+	<script src="//storage.googleapis.com/installer/khipu-0.1.js"></script>
 
 </head>
 

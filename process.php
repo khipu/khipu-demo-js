@@ -27,9 +27,9 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/atmosphere/2.1.2/atmosphere.min.js"></script> 
-	<script src="http://storage.googleapis.com/installer/khipu-1.1.js"></script>
+	<script src="//storage.googleapis.com/installer/khipu-1.1.js"></script>
 
 </head>
 
@@ -61,7 +61,7 @@
 					instrucciones.</p>
 
 				<div class="col-sm-offset-4 start-khipu">
-					<img src="https://s3.amazonaws.com/static.khipu.com/buttons/200x50.png" id="pay-button"/>
+					<img src="https://s3.amazonaws.com/static.khipu.com/buttons/2015/200x75-transparent.png" id="pay-button"/>
 				</div>
 			</div>
 

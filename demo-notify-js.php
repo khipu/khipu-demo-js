@@ -42,7 +42,7 @@ fwrite($fh, print_r($_REQUEST, true));
 fwrite($fh, $line);
 
 if ($transaction_id == 'demo-js-transaction-1' && $response == 'VERIFIED' && $receiver_id == $my_receiver_id) {
-	$headers = 'From: "Vyreal" <no-responder@khipu.com>' . "\r\n";
+	$headers = 'From: "Comercio de prueba" <no-responder@khipu.com>' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 	$subject = 'La compra de prueba funciona';
 	$body = <<<EOF
