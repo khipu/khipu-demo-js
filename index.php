@@ -60,7 +60,7 @@
 
 					</div>
 					<div class="form-group">
-						<label for="bankId" class="col-sm-4 control-label">Elije tu banco</label>
+						<label for="bankId" class="col-sm-4 control-label">Elige tu banco</label>
 
 						<div class="col-sm-8">
 							<select name="bankId" class="form-control" id="bankId">
