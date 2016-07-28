@@ -1,4 +1,3 @@
-<?php include('khipu-lib.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +27,7 @@
 	<![endif]-->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//storage.googleapis.com/installer/khipu.js"></script>
+	<script src="//storage.googleapis.com/installer/khipu-2.0.js"></script>
 
 </head>
 
@@ -77,11 +76,7 @@
 <div id="khipu-chrome-extension-div"></div>
 <script>
 	window.onload = function () {
-		KhipuLib.onLoad({
-				elementId: 'pay-button',
-				data: <?php echo $_REQUEST['data']; ?>
-			}
-		)
+		KhipuLib.startKhipu('<?php echo $_GET['url'];?>','<?php echo $_GET['id'];?>','<?php echo $_GET['ready_for_terminal'];?>');
 	}
 </script>
 <script src="js/bootstrap.min.js"></script>

@@ -1,4 +1,3 @@
-<?php include('khipu-lib.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
