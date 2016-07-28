@@ -76,7 +76,7 @@
 <div id="khipu-chrome-extension-div"></div>
 <script>
 	window.onload = function () {
-		KhipuLib.startKhipu('<?php echo $_GET['url'];?>','<?php echo $_GET['id'];?>','<?php echo $_GET['ready_for_terminal'];?>');
+		KhipuLib.startKhipu('<?php echo $_GET['url'];?>','<?php echo $_GET['id'];?>','<?php echo $_GET['ready_for_terminal'];?>', '#pay-button');
 	}
 </script>
 <script src="js/bootstrap.min.js"></script>
